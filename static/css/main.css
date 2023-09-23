@@ -1,0 +1,16 @@
+body {
+    background-color: teal;
+    font-family: Arial, sans-serif;    
+}
+h1 {
+    color: #FF4500;
+}
+p {
+    color: #008000;
+}
+img {
+    border: 4px solid #4CAF50;
+    border-radius: 12px;
+}
+
+/* CSS for the main app */

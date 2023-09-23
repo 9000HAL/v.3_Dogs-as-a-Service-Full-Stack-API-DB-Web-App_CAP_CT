@@ -1,0 +1,27 @@
+<!-- signup.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Sign Up</h1>
+
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div>
+        <label for="username">Username:</label>
+        {{ form.username(id="username") }}
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        {{ form.email(id="email") }}
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        {{ form.password(id="password") }}
+    </div>
+    <div>
+        <input type="submit" value="Signup">
+    </div>
+</form>
+
+{% endblock %}
