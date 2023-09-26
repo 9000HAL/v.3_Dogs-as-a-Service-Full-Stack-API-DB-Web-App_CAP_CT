@@ -70,7 +70,9 @@ def add_user(username, email):
 @app.route('/users', methods=['GET'])
 def list_users():
     users = User.query.all()
-    return '<br>'.join([f'User: {user.username}, Email: {user.email}' for user in users])
+    #return '<br>'.join([f'User: {user.username}, Email: {user.email}' for user in users])
+    return '<br>'.join([f'Random Dog Clubber: {user.username}, Email: {user.email}' for user in users])
+
 
 @app.route('/update', methods=['GET', 'POST'])
 def update_user():

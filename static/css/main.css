@@ -1,4 +1,104 @@
 body {
+    background-color: #FFEBB7; /* light yellow */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FF4500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+p {
+    color: #008000;
+    text-align: center;
+}
+
+img {
+    border: 4px solid #4CAF50;
+    border-radius: 12px;
+    max-width: 100%;
+    margin: 1rem;
+}
+
+/* Main Content Grid for Dog images */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* API & Database Description */
+.api-description, .db-description {
+    background-color: #FFF3E0; /* light orange */
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.api-description a, .db-description a {
+    color: #FF6F00; /* dark orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.api-description a:hover, .db-description a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation bar enhancements */
+.navbar {
+    background-color: #FF9E80; /* coral */
+}
+
+.navbar a {
+    color: #3E2723; /* dark brown */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for the main app  v.1
+body {
     background-color: teal;
     font-family: Arial, sans-serif;    
 }
@@ -13,4 +113,4 @@ img {
     border-radius: 12px;
 }
 
-/* CSS for the main app */
+*/
