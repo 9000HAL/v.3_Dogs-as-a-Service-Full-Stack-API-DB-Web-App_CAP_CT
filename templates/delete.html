@@ -1,8 +1,11 @@
 <!-- delete.html -->
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Delete Account</h1>
-    <p>Hey dawg, this is a dog, don't delete your Dogs-as-a-Service account!</p>
+    <h1>Delete Account?</h1>
+    <br>
+    <br>
+    <br>
+    <p>Hey dawg, this is your dog dawg, don't delete your Dogs-as-a-Service account!</p>
     <img src="{{ url_for('static', filename='images/dog.png') }}" alt="Mad Dog">
     <form action="{{ url_for('confirm_delete', username=username) }}" method="post">
         <input type="submit" value="Yes, Delete my Account">
