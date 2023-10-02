@@ -115,15 +115,16 @@ def confirm_delete(username):
 
 
 
+
 @app.route('/random_dog', methods=['GET'])
 def random_dog():
     response = requests.get('https://api.thedogapi.com/v1/images/search')
     if response.status_code == 200:
         data = response.json()
         return f"<img src='{data[0]['url']}'>"
-        #return f"<img src='{data['message']}'>"
+        #return f"<img src='{data['message']}'>" ------NO-------v.1
     else:
-        # You can render a template with an error message instead of this.
+        # render a template with an error message instead of this
         return "Failed to fetch random dog image!", 500
 
 
@@ -140,6 +141,8 @@ def random_dog():
     return f"<img src='{data['message']}'>"
 
 """
+
+
 
 
 
