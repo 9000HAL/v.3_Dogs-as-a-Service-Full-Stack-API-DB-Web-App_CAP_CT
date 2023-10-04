@@ -44,15 +44,12 @@ class SignupForm(FlaskForm):
     password = PasswordField('Password')
     submit = SubmitField('Signup')
 
+
+
+
 @app.route('/')
 def home():
     return render_template('index.html')
-
-
-
-
-
-
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -74,11 +71,28 @@ def add_user(username, email):
     db.session.commit()
     return f'User {new_user.username} added.'
 
+
+
+
+#v.3 here below------****************************************************************************************************
+@app.route('/users', methods=['GET'])
+def list_users():
+    users = User.query.all()
+    return render_template('users.html', users=users)
+
+
+#####v.2 here below------****************************************************************************************************
+"""
 @app.route('/users', methods=['GET'])
 def list_users():
     users = User.query.all()
     #return '<br>'.join([f'User: {user.username}, Email: {user.email}' for user in users])
     return '<br>'.join([f'Random Dog Clubber: {user.username}, Email: {user.email}' for user in users])
+"""
+#####v.2 here above------****************************************************************************************************
+
+
+
 
 
 @app.route('/update', methods=['GET', 'POST'])
@@ -95,6 +109,11 @@ def update_user():
             return f'User {username} does not exist.'
     return render_template('update.html')
 
+
+
+
+
+
 @app.route('/delete/<username>', methods=['GET'])
 @login_required
 def delete_user(username):
@@ -103,6 +122,7 @@ def delete_user(username):
         if user:
             return render_template('delete.html', username=username)
     return redirect(url_for('home'))
+
 
 @app.route('/confirm_delete/<username>', methods=['POST'])
 @login_required

@@ -2,15 +2,14 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>Delete Account?</h1>
-    <br>
-    <br>
-    <br>
-    <p>Hey dawg, this is your dog dawg, don't delete your Dogs-as-a-Service account!</p>
+    <h5>"Hey dawg, this is your dog dawg!<br>Don't delete your Dogs-as-a-Service account!"</h5>
     <img src="{{ url_for('static', filename='images/dog.png') }}" alt="Mad Dog">
     <form action="{{ url_for('confirm_delete', username=username) }}" method="post">
-        <input type="submit" value="Yes, Delete my Account">
+        <input type="submit" value="BAD DOG! Delete My Account!">
     </form>
-    <a href="{{ url_for('home') }}">Back to Home</a>
+    <a href="{{ url_for('home') }}" id="home-link">Don't Delete. Doggy Go Home.</a>
+
+    <!--<a href="{{ url_for('home') }}">Back to Home</a>-->
 {% endblock %}
 
 

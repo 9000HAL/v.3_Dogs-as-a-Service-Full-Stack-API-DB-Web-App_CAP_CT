@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>Update User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
+
+    <a href="{{ url_for('home') }}" class="doggy-home">Doggy Go Home!</a>
 
     <h1>Update User</h1>
 
@@ -16,6 +19,8 @@
 
         <input type="submit" value="Update">
     </form>
+
+    <a href="{{ url_for('list_users') }}" class="doggy-clubbers-link">See Current Random Dog Clubber Info Again</a>
 
 </body>
 </html>
