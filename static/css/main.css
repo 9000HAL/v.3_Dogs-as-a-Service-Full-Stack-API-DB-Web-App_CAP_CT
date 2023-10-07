@@ -79,7 +79,7 @@ img {
     text-decoration: none;
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: -100px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     
 }
@@ -92,7 +92,7 @@ img {
 
 /* CSS for 'random_dog' page */
 .dog-img {
-    max-width: 50%;
+    max-width: 75%;
     margin-top: 50px;
     
 }
@@ -105,10 +105,10 @@ img {
     display: inline-block;
     background-color: #ffd700;
     color: black;
-    padding: 25px 25px;
-    border-radius: 90px;
+    padding: 50px 50px;
+    border-radius: 100px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     position: fixed;
     margin-bottom: 50px;
     top: 75%;
@@ -177,15 +177,16 @@ img {
 
 
 /* CSS for 'DELETE ACCOUNT' page---------------------fixed???????????????????????????????????????????????????? */
+
 h5 {
     color: #008000;
     text-align: left;
     background-color: lightblue;
-    padding: 1rem;
+    padding: 15rem;
+    margin: -15rem;
 }
+
 /* CSS for 'DELETE ACCOUNT' page */
-
-
 
 
 
@@ -193,7 +194,7 @@ h5 {
 /*signup and login*/
 form {
     background-color: #FFEBB7; /* light yellow */
-    padding: 20rem;
+    padding: 6rem;
     margin: -1rem;
     border-radius: 10px;
     text-align: center;
@@ -205,8 +206,8 @@ form {
 form:before {
     content: '🐾';
     position: absolute;
-    left: 1000px;
-    top: 40%;
+    left: 850px;
+    top: 60%;
     transform: translateY(-50%);
     font-size: 225px;
     background-color: lightblue;
