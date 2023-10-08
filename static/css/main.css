@@ -56,11 +56,11 @@ img {
 
 /* Navigation bar enhancements */
 .nav-item {
-    background-color: #FF9E80; /* coral */
+    background-color: yellowgreen; /* nav color */
 }
 
 .nav-item a {
-    color: #3E2723; /* dark brown */
+    color: white; /* ? review documentartion....... */
 }
 
 
