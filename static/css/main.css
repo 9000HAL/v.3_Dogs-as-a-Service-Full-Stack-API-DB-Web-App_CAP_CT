@@ -55,11 +55,11 @@ img {
 }
 
 /* Navigation bar enhancements */
-.navbar {
+.nav-item {
     background-color: #FF9E80; /* coral */
 }
 
-.navbar a {
+.nav-item a {
     color: #3E2723; /* dark brown */
 }
 
@@ -92,7 +92,7 @@ img {
 
 /* CSS for 'random_dog' page */
 .dog-img {
-    max-width: 75%;
+    max-width: 50%;
     margin-top: 50px;
     
 }
@@ -196,9 +196,8 @@ form {
     background-color: #FFEBB7; /* light yellow */
     padding: 6rem;
     margin: -1rem;
-    border-radius: 10px;
+    border-radius: 100px;
     text-align: center;
-
     position: fixed;
     top: 20%;
 }
@@ -206,10 +205,10 @@ form {
 form:before {
     content: '🐾';
     position: absolute;
-    left: 850px;
+    left: 650px;
     top: 60%;
     transform: translateY(-50%);
-    font-size: 225px;
+    font-size: 250px;
     background-color: lightblue;
 }
 
